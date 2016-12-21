@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "12D71C0C3512A203713C5D22EFEF56C25EF1C11C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "12D71C0C3512A203713C5D22EFEF56C25EF1C11C" : 9223372036854775807,
+    "C28F1231EDD74CA90DD14359A78199FC14B29AD5" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "EED89A8D-CDDB-4EE5-A618-914E7AE1A8F7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "12D71C0C3512A203713C5D22EFEF56C25EF1C11C" : "Dollar-Currency-Converter\/",
+    "C28F1231EDD74CA90DD14359A78199FC14B29AD5" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Dollar converter",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Dollar converter.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:JennyShalai\/Dollar-Currency-Converter.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "12D71C0C3512A203713C5D22EFEF56C25EF1C11C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:JennyShalai\/Custom-Animation-Center-Expand.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C28F1231EDD74CA90DD14359A78199FC14B29AD5"
+    }
+  ]
+}

@@ -24,7 +24,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         DataStore.store.getCurrency(completion: {
             self.initCurrency()
-            self.test()
+            DispatchQueue.main.async {
+                self.updateLabels()
+            }
+            
         })
         
         
@@ -37,7 +40,7 @@ class ViewController: UIViewController {
         self.BRL = DataStore.store.BRL
     }
     
-    func test() {
+    func updateLabels() {
         self.GBPLabel.text = String(self.GBP)
         self.EURLabel.text = String(self.EUR)
      }
