@@ -32,9 +32,9 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="752" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eyE-y4-atQ" userLabel="USDInputTextField">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="752" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eyE-y4-atQ" userLabel="USDInputTextField">
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
@@ -78,6 +78,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BrazilFlag" translatesAutoresizingMaskIntoConstraints="NO" id="zEz-hX-nvK">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zEz-hX-nvK" secondAttribute="height" multiplier="2:1" id="g6E-9r-RhN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mH5-Tu-5RG" userLabel="BrazilLabel">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -86,14 +97,19 @@
                             <constraint firstItem="wO8-Pw-hgc" firstAttribute="centerX" secondItem="EVN-yt-9hc" secondAttribute="centerX" id="8aI-TV-Xkj"/>
                             <constraint firstItem="WHB-Hz-7Wz" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="9RA-lI-6x0"/>
                             <constraint firstItem="Yib-eA-zA2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CAj-B4-6AT"/>
-                            <constraint firstItem="EVN-yt-9hc" firstAttribute="top" secondItem="Yib-eA-zA2" secondAttribute="bottom" constant="20" id="E3j-PU-3sF"/>
+                            <constraint firstItem="EVN-yt-9hc" firstAttribute="top" secondItem="Yib-eA-zA2" secondAttribute="bottom" constant="10" id="E3j-PU-3sF"/>
                             <constraint firstItem="wO8-Pw-hgc" firstAttribute="height" secondItem="EVN-yt-9hc" secondAttribute="height" multiplier="0.3" id="FYG-e9-dVr"/>
                             <constraint firstItem="bmk-uH-6Lz" firstAttribute="width" secondItem="WHB-Hz-7Wz" secondAttribute="width" multiplier="0.6" id="IEe-8g-2p2"/>
+                            <constraint firstItem="mH5-Tu-5RG" firstAttribute="centerY" secondItem="zEz-hX-nvK" secondAttribute="centerY" constant="1" id="IlL-w5-wgB"/>
                             <constraint firstItem="Yib-eA-zA2" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="JMc-sx-vNp"/>
                             <constraint firstItem="wO8-Pw-hgc" firstAttribute="centerY" secondItem="EVN-yt-9hc" secondAttribute="centerY" id="N6Z-I6-Mmb"/>
                             <constraint firstItem="bmk-uH-6Lz" firstAttribute="height" secondItem="WHB-Hz-7Wz" secondAttribute="height" multiplier="0.3" id="NfQ-3G-0VU"/>
+                            <constraint firstItem="mH5-Tu-5RG" firstAttribute="width" secondItem="zEz-hX-nvK" secondAttribute="width" multiplier="0.6" id="OXN-Ta-Gg7"/>
                             <constraint firstItem="WHB-Hz-7Wz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PlI-Os-zLj"/>
-                            <constraint firstItem="WHB-Hz-7Wz" firstAttribute="top" secondItem="EVN-yt-9hc" secondAttribute="bottom" constant="20" id="Tea-HF-jMV"/>
+                            <constraint firstItem="zEz-hX-nvK" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="Tbu-4T-dZS"/>
+                            <constraint firstItem="WHB-Hz-7Wz" firstAttribute="top" secondItem="EVN-yt-9hc" secondAttribute="bottom" constant="10" id="Tea-HF-jMV"/>
+                            <constraint firstItem="mH5-Tu-5RG" firstAttribute="centerX" secondItem="zEz-hX-nvK" secondAttribute="centerX" id="UZc-Sz-1fN"/>
+                            <constraint firstItem="mH5-Tu-5RG" firstAttribute="height" secondItem="zEz-hX-nvK" secondAttribute="height" multiplier="0.3" id="Uwg-bq-Geo"/>
                             <constraint firstItem="bmk-uH-6Lz" firstAttribute="centerX" secondItem="WHB-Hz-7Wz" secondAttribute="centerX" id="WkB-aG-gEc"/>
                             <constraint firstItem="EJk-G1-5Kl" firstAttribute="height" secondItem="Yib-eA-zA2" secondAttribute="height" multiplier="0.3" id="X3r-Iq-9GZ"/>
                             <constraint firstItem="EJk-G1-5Kl" firstAttribute="centerY" secondItem="Yib-eA-zA2" secondAttribute="centerY" id="b6i-wc-fYa"/>
@@ -102,9 +118,11 @@
                             <constraint firstItem="bmk-uH-6Lz" firstAttribute="centerY" secondItem="WHB-Hz-7Wz" secondAttribute="centerY" constant="1" id="gcG-dt-g2O"/>
                             <constraint firstItem="BXp-ee-DSl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hrM-UT-bfI"/>
                             <constraint firstItem="EJk-G1-5Kl" firstAttribute="centerX" secondItem="Yib-eA-zA2" secondAttribute="centerX" id="iJa-ea-9Ih"/>
+                            <constraint firstItem="zEz-hX-nvK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ktq-7s-C3i"/>
                             <constraint firstItem="Yib-eA-zA2" firstAttribute="top" secondItem="BXp-ee-DSl" secondAttribute="bottom" constant="20" id="lEx-g6-gXl"/>
                             <constraint firstItem="BXp-ee-DSl" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.15" id="o6R-ug-e37"/>
                             <constraint firstItem="EVN-yt-9hc" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="pnZ-Fa-kLQ"/>
+                            <constraint firstItem="zEz-hX-nvK" firstAttribute="top" secondItem="WHB-Hz-7Wz" secondAttribute="bottom" constant="10" id="tJy-df-9vf"/>
                             <constraint firstItem="wO8-Pw-hgc" firstAttribute="width" secondItem="EVN-yt-9hc" secondAttribute="width" multiplier="0.6" id="yPG-gk-zn5"/>
                         </constraints>
                     </view>
@@ -119,6 +137,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BrazilFlag" width="300" height="150"/>
         <image name="EuropeFlag" width="304" height="154"/>
         <image name="GreatBritainFlag" width="300" height="150"/>
         <image name="JapanFlag" width="300" height="150"/>
