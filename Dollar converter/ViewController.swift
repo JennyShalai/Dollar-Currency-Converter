@@ -10,7 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var GBN = 0.0
+    
+    
+    @IBOutlet weak var EURLabel: UILabel!
+    @IBOutlet weak var GBPLabel: UILabel!
+    
+    var GBP = 0.0
     var EUR = 0.0
     var JPY = 0.0
     var BRL = 0.0
@@ -26,15 +31,16 @@ class ViewController: UIViewController {
     }
     
     func initCurrency() {
-        self.GBN = DataStore.store.GBN
+        self.GBP = DataStore.store.GBP
         self.EUR = DataStore.store.EUR
         self.JPY = DataStore.store.JPY
         self.BRL = DataStore.store.BRL
     }
     
     func test() {
-        print(self.GBN)
-    }
+        self.GBPLabel.text = String(self.GBP)
+        self.EURLabel.text = String(self.EUR)
+     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

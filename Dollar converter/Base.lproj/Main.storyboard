@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dollar_converter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +19,60 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreatBritainFlag" translatesAutoresizingMaskIntoConstraints="NO" id="EVN-yt-9hc">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EVN-yt-9hc" secondAttribute="height" multiplier="2:1" id="F5B-Uu-urp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wO8-Pw-hgc" userLabel="GreatBritainLabel">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EuropeFlag" translatesAutoresizingMaskIntoConstraints="NO" id="Yib-eA-zA2">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Yib-eA-zA2" secondAttribute="height" multiplier="2:1" id="kw6-XS-wWw"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJk-G1-5Kl" userLabel="EuropeLabel">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EVN-yt-9hc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0rx-Bn-KVf"/>
+                            <constraint firstItem="EJk-G1-5Kl" firstAttribute="width" secondItem="Yib-eA-zA2" secondAttribute="width" multiplier="0.6" id="6wB-LD-8Hl"/>
+                            <constraint firstItem="wO8-Pw-hgc" firstAttribute="centerX" secondItem="EVN-yt-9hc" secondAttribute="centerX" id="8aI-TV-Xkj"/>
+                            <constraint firstItem="Yib-eA-zA2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CAj-B4-6AT"/>
+                            <constraint firstItem="EVN-yt-9hc" firstAttribute="top" secondItem="Yib-eA-zA2" secondAttribute="bottom" constant="20" id="E3j-PU-3sF"/>
+                            <constraint firstItem="wO8-Pw-hgc" firstAttribute="height" secondItem="EVN-yt-9hc" secondAttribute="height" multiplier="0.3" id="FYG-e9-dVr"/>
+                            <constraint firstItem="Yib-eA-zA2" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="JMc-sx-vNp"/>
+                            <constraint firstItem="wO8-Pw-hgc" firstAttribute="centerY" secondItem="EVN-yt-9hc" secondAttribute="centerY" id="N6Z-I6-Mmb"/>
+                            <constraint firstItem="EJk-G1-5Kl" firstAttribute="height" secondItem="Yib-eA-zA2" secondAttribute="height" multiplier="0.3" id="X3r-Iq-9GZ"/>
+                            <constraint firstItem="EJk-G1-5Kl" firstAttribute="centerY" secondItem="Yib-eA-zA2" secondAttribute="centerY" id="b6i-wc-fYa"/>
+                            <constraint firstItem="Yib-eA-zA2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hYB-O8-9S1"/>
+                            <constraint firstItem="EJk-G1-5Kl" firstAttribute="centerX" secondItem="Yib-eA-zA2" secondAttribute="centerX" id="iJa-ea-9Ih"/>
+                            <constraint firstItem="EVN-yt-9hc" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="pnZ-Fa-kLQ"/>
+                            <constraint firstItem="wO8-Pw-hgc" firstAttribute="width" secondItem="EVN-yt-9hc" secondAttribute="width" multiplier="0.6" id="yPG-gk-zn5"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="EURLabel" destination="EJk-G1-5Kl" id="ODb-bI-ByB"/>
+                        <outlet property="GBPLabel" destination="wO8-Pw-hgc" id="hAw-dy-t1g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="120.98950524737631"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="EuropeFlag" width="304" height="154"/>
+        <image name="GreatBritainFlag" width="300" height="150"/>
+    </resources>
 </document>

@@ -12,7 +12,7 @@ class DataStore {
     
     static let store = DataStore()
     // UK Pounds (GBP)
-    var GBN = 0.0
+    var GBP = 0.0
     // EU Euro (EUR)
     var EUR = 0.0
     // Japan Yen - (JPY)
@@ -25,7 +25,7 @@ class DataStore {
         // get data from API and inits currency objects
         USDCurrencyAPI.getUSDCurrency { (data) in
             if let ratesDictionary = data["rates"] as? NSDictionary {
-                self.GBN = ratesDictionary["BGN"] as! Double
+                self.GBP = ratesDictionary["GBP"] as! Double
                 self.EUR = ratesDictionary["EUR"] as! Double
                 self.JPY = ratesDictionary["JPY"] as! Double
                 self.BRL = ratesDictionary["BRL"] as! Double
