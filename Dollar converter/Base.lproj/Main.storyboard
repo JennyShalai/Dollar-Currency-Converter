@@ -42,19 +42,37 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JapanFlag" translatesAutoresizingMaskIntoConstraints="NO" id="WHB-Hz-7Wz">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WHB-Hz-7Wz" secondAttribute="height" multiplier="2:1" id="Ugl-e5-f21"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmk-uH-6Lz" userLabel="JapanLabel">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="EVN-yt-9hc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0rx-Bn-KVf"/>
                             <constraint firstItem="EJk-G1-5Kl" firstAttribute="width" secondItem="Yib-eA-zA2" secondAttribute="width" multiplier="0.6" id="6wB-LD-8Hl"/>
                             <constraint firstItem="wO8-Pw-hgc" firstAttribute="centerX" secondItem="EVN-yt-9hc" secondAttribute="centerX" id="8aI-TV-Xkj"/>
+                            <constraint firstItem="WHB-Hz-7Wz" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="9RA-lI-6x0"/>
                             <constraint firstItem="Yib-eA-zA2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CAj-B4-6AT"/>
                             <constraint firstItem="EVN-yt-9hc" firstAttribute="top" secondItem="Yib-eA-zA2" secondAttribute="bottom" constant="20" id="E3j-PU-3sF"/>
                             <constraint firstItem="wO8-Pw-hgc" firstAttribute="height" secondItem="EVN-yt-9hc" secondAttribute="height" multiplier="0.3" id="FYG-e9-dVr"/>
+                            <constraint firstItem="bmk-uH-6Lz" firstAttribute="width" secondItem="WHB-Hz-7Wz" secondAttribute="width" multiplier="0.6" id="IEe-8g-2p2"/>
                             <constraint firstItem="Yib-eA-zA2" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="JMc-sx-vNp"/>
                             <constraint firstItem="wO8-Pw-hgc" firstAttribute="centerY" secondItem="EVN-yt-9hc" secondAttribute="centerY" id="N6Z-I6-Mmb"/>
+                            <constraint firstItem="bmk-uH-6Lz" firstAttribute="height" secondItem="WHB-Hz-7Wz" secondAttribute="height" multiplier="0.3" id="NfQ-3G-0VU"/>
+                            <constraint firstItem="WHB-Hz-7Wz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PlI-Os-zLj"/>
+                            <constraint firstItem="WHB-Hz-7Wz" firstAttribute="top" secondItem="EVN-yt-9hc" secondAttribute="bottom" constant="20" id="Tea-HF-jMV"/>
+                            <constraint firstItem="bmk-uH-6Lz" firstAttribute="centerX" secondItem="WHB-Hz-7Wz" secondAttribute="centerX" id="WkB-aG-gEc"/>
                             <constraint firstItem="EJk-G1-5Kl" firstAttribute="height" secondItem="Yib-eA-zA2" secondAttribute="height" multiplier="0.3" id="X3r-Iq-9GZ"/>
                             <constraint firstItem="EJk-G1-5Kl" firstAttribute="centerY" secondItem="Yib-eA-zA2" secondAttribute="centerY" id="b6i-wc-fYa"/>
+                            <constraint firstItem="bmk-uH-6Lz" firstAttribute="centerY" secondItem="WHB-Hz-7Wz" secondAttribute="centerY" constant="1" id="gcG-dt-g2O"/>
                             <constraint firstItem="Yib-eA-zA2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hYB-O8-9S1"/>
                             <constraint firstItem="EJk-G1-5Kl" firstAttribute="centerX" secondItem="Yib-eA-zA2" secondAttribute="centerX" id="iJa-ea-9Ih"/>
                             <constraint firstItem="EVN-yt-9hc" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="pnZ-Fa-kLQ"/>
@@ -74,5 +92,6 @@
     <resources>
         <image name="EuropeFlag" width="304" height="154"/>
         <image name="GreatBritainFlag" width="300" height="150"/>
+        <image name="JapanFlag" width="300" height="150"/>
     </resources>
 </document>
