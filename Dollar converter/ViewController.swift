@@ -26,6 +26,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initTextField()
+        self.initLabels()
         DataStore.store.getCurrency(completion: {
             self.initCurrency()
             // work with UI on main queue
@@ -36,8 +37,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func initTextField() {
+        // present only numeral keyboard for input
         USDInputTextField.delegate = self
         USDInputTextField.keyboardType = UIKeyboardType.numberPad
+        
+        // when tapped outside the keyboard - close keyboard
+        let tapRecognizer = UITapGestureRecognizer()
+        tapRecognizer.addTarget(self, action: #selector(ViewController.didTapView))
+        self.view.addGestureRecognizer(tapRecognizer)
     }
     
     func initCurrency() {
@@ -48,6 +55,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.date = DataStore.store.date
     }
     
+    func initLabels() {
+        self.BRLLabel.adjustsFontSizeToFitWidth = true
+        self.EURLabel.adjustsFontSizeToFitWidth = true
+        self.JPYLabel.adjustsFontSizeToFitWidth = true
+        self.GBPLabel.adjustsFontSizeToFitWidth = true
+    }
+    
     func updateLabels(ammout: Double) {
         self.GBPLabel.text = String(self.GBP * ammout)
         self.EURLabel.text = String(self.EUR * ammout)
@@ -56,15 +70,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.dateLabel.text = self.date
      }
     
-    
-    
-//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-//        self.USDInputTextField.resignFirstResponder()
-//        return true
-//    }
+    func didTapView() {
+        self.view.endEditing(true)
+    }
     
     @IBAction func USDInputEdited(_ sender: AnyObject) {
-        print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@CHANGED")
         if let USDAmmount = Double(self.USDInputTextField.text!) {
             self.updateLabels(ammout: USDAmmount)
         }
