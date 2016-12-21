@@ -27,7 +27,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD ammount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waK-f7-mVb" userLabel="USDAmmountLabel">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waK-f7-mVb" userLabel="USDAmmountLabel">
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -86,9 +86,9 @@
                                     <constraint firstAttribute="width" secondItem="zEz-hX-nvK" secondAttribute="height" multiplier="2:1" id="g6E-9r-RhN"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mH5-Tu-5RG" userLabel="BrazilLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mH5-Tu-5RG" userLabel="BrazilLabel">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.0039215686274509803" green="0.12549019607843137" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -116,7 +116,7 @@
                             <constraint firstItem="bmk-uH-6Lz" firstAttribute="centerX" secondItem="WHB-Hz-7Wz" secondAttribute="centerX" id="WkB-aG-gEc"/>
                             <constraint firstItem="EJk-G1-5Kl" firstAttribute="height" secondItem="Yib-eA-zA2" secondAttribute="height" multiplier="0.3" id="X3r-Iq-9GZ"/>
                             <constraint firstItem="EJk-G1-5Kl" firstAttribute="centerY" secondItem="Yib-eA-zA2" secondAttribute="centerY" id="b6i-wc-fYa"/>
-                            <constraint firstItem="BXp-ee-DSl" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="frD-md-ICg"/>
+                            <constraint firstItem="BXp-ee-DSl" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="frD-md-ICg"/>
                             <constraint firstItem="BXp-ee-DSl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="gX9-Zz-6eR"/>
                             <constraint firstItem="bmk-uH-6Lz" firstAttribute="centerY" secondItem="WHB-Hz-7Wz" secondAttribute="centerY" constant="1" id="gcG-dt-g2O"/>
                             <constraint firstItem="BXp-ee-DSl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hrM-UT-bfI"/>

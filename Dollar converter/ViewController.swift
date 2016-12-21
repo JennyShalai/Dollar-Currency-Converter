@@ -22,6 +22,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     var JPY = 0.0
     var BRL = 0.0
     var date = ""
+    var currentInput = 1
+    let maxInput = 999999999999999
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +33,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             self.initCurrency()
             // work with UI on main queue
             DispatchQueue.main.async {
-                self.updateLabels(ammout: 1.0)
+                self.updateLabels(amout: 1.0)
             }
         })
     }
@@ -40,6 +42,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // present only numeral keyboard for input
         USDInputTextField.delegate = self
         USDInputTextField.keyboardType = UIKeyboardType.numberPad
+        
+        // shrink font to fit
+        USDInputTextField.adjustsFontSizeToFitWidth = true
         
         // when tapped outside the keyboard - close keyboard
         let tapRecognizer = UITapGestureRecognizer()
@@ -62,11 +67,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.GBPLabel.adjustsFontSizeToFitWidth = true
     }
     
-    func updateLabels(ammout: Double) {
-        self.GBPLabel.text = String(self.GBP * ammout)
-        self.EURLabel.text = String(self.EUR * ammout)
-        self.JPYLabel.text = String(self.JPY * ammout)
-        self.BRLLabel.text = String(self.BRL * ammout)
+    func updateLabels(amout: Double) {
+        self.GBPLabel.text = String(self.GBP * amout)
+        self.EURLabel.text = String(self.EUR * amout)
+        self.JPYLabel.text = String(self.JPY * amout)
+        self.BRLLabel.text = String(self.BRL * amout)
         self.dateLabel.text = self.date
      }
     
@@ -75,11 +80,31 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func USDInputEdited(_ sender: AnyObject) {
-        if let USDAmmount = Double(self.USDInputTextField.text!) {
-            self.updateLabels(ammout: USDAmmount)
+        
+        if let input = Int(self.USDInputTextField.text!) {
+            self.currentInput = input
+            self.validation()
+        } else {
+            self.currentInput = 0
+            self.updateLabels(amout: 0.0)
         }
+        
+        
     }
     
+    func validation() {
+        
+        
+        if self.currentInput == 0 {
+            self.USDInputTextField.text = ""
+        } else if self.currentInput > self.maxInput {
+            USDInputTextField.deleteBackward()
+        } else if let USDAmount = Double(self.USDInputTextField.text!) {
+            self.updateLabels(amout: USDAmount)
+        } else if self.USDInputTextField.text == "" {
+            self.updateLabels(amout: 0.0)
+        }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
