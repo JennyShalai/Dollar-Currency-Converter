@@ -20,6 +20,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BXp-ee-DSl">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKZ-pu-baE" userLabel="DateLabel">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD ammount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waK-f7-mVb" userLabel="USDAmmountLabel">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="752" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eyE-y4-atQ" userLabel="USDInputTextField">
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="fKZ-pu-baE" firstAttribute="width" secondItem="BXp-ee-DSl" secondAttribute="width" id="HCd-y2-9MN"/>
+                                    <constraint firstItem="eyE-y4-atQ" firstAttribute="width" secondItem="BXp-ee-DSl" secondAttribute="width" id="TwB-CU-oPH"/>
+                                    <constraint firstItem="waK-f7-mVb" firstAttribute="width" secondItem="BXp-ee-DSl" secondAttribute="width" id="lrg-Fx-TBU"/>
+                                    <constraint firstItem="fKZ-pu-baE" firstAttribute="top" secondItem="BXp-ee-DSl" secondAttribute="top" id="rRW-ag-T6T"/>
+                                </constraints>
+                            </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreatBritainFlag" translatesAutoresizingMaskIntoConstraints="NO" id="EVN-yt-9hc">
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="EVN-yt-9hc" secondAttribute="height" multiplier="2:1" id="F5B-Uu-urp"/>
@@ -72,9 +97,13 @@
                             <constraint firstItem="bmk-uH-6Lz" firstAttribute="centerX" secondItem="WHB-Hz-7Wz" secondAttribute="centerX" id="WkB-aG-gEc"/>
                             <constraint firstItem="EJk-G1-5Kl" firstAttribute="height" secondItem="Yib-eA-zA2" secondAttribute="height" multiplier="0.3" id="X3r-Iq-9GZ"/>
                             <constraint firstItem="EJk-G1-5Kl" firstAttribute="centerY" secondItem="Yib-eA-zA2" secondAttribute="centerY" id="b6i-wc-fYa"/>
+                            <constraint firstItem="BXp-ee-DSl" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="frD-md-ICg"/>
+                            <constraint firstItem="BXp-ee-DSl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="gX9-Zz-6eR"/>
                             <constraint firstItem="bmk-uH-6Lz" firstAttribute="centerY" secondItem="WHB-Hz-7Wz" secondAttribute="centerY" constant="1" id="gcG-dt-g2O"/>
-                            <constraint firstItem="Yib-eA-zA2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hYB-O8-9S1"/>
+                            <constraint firstItem="BXp-ee-DSl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hrM-UT-bfI"/>
                             <constraint firstItem="EJk-G1-5Kl" firstAttribute="centerX" secondItem="Yib-eA-zA2" secondAttribute="centerX" id="iJa-ea-9Ih"/>
+                            <constraint firstItem="Yib-eA-zA2" firstAttribute="top" secondItem="BXp-ee-DSl" secondAttribute="bottom" constant="20" id="lEx-g6-gXl"/>
+                            <constraint firstItem="BXp-ee-DSl" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.15" id="o6R-ug-e37"/>
                             <constraint firstItem="EVN-yt-9hc" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="pnZ-Fa-kLQ"/>
                             <constraint firstItem="wO8-Pw-hgc" firstAttribute="width" secondItem="EVN-yt-9hc" secondAttribute="width" multiplier="0.6" id="yPG-gk-zn5"/>
                         </constraints>
