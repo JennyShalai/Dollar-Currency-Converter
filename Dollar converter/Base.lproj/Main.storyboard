@@ -127,8 +127,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="BRLLabel" destination="mH5-Tu-5RG" id="ArD-IT-XaG"/>
                         <outlet property="EURLabel" destination="EJk-G1-5Kl" id="ODb-bI-ByB"/>
                         <outlet property="GBPLabel" destination="wO8-Pw-hgc" id="hAw-dy-t1g"/>
+                        <outlet property="JPYLabel" destination="bmk-uH-6Lz" id="hoU-HW-kGF"/>
+                        <outlet property="dateLabel" destination="fKZ-pu-baE" id="16d-Lv-sjr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

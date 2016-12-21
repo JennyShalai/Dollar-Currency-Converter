@@ -19,11 +19,17 @@ class DataStore {
     var JPY = 0.0
     // Brazil Reais - (BRL)
     var BRL = 0.0
+    // date of currency
+    var date = ""
     
     func getCurrency(completion: @escaping () -> ()) {
         
         // get data from API and inits currency objects
         USDCurrencyAPI.getUSDCurrency { (data) in
+            if let date = data["date"] as? String {
+                self.date = date
+            }
+            
             if let ratesDictionary = data["rates"] as? NSDictionary {
                 self.GBP = ratesDictionary["GBP"] as! Double
                 self.EUR = ratesDictionary["EUR"] as! Double
