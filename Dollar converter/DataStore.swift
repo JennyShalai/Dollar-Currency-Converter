@@ -26,6 +26,7 @@ class DataStore {
         
         // get data from API and inits currency objects
         USDCurrencyAPI.getUSDCurrency { (data) in
+            
             if let date = data["date"] as? String {
                 self.date = date
             }
